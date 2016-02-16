@@ -60,7 +60,10 @@ class Timeslots
      * @ORM\Column(name="reservation_url",type="text")
      */
     private $reservationurl;
-
+    /**
+     * @ORM\Column(name="bool_verwijderd",type="integer", length=1)
+     */
+    private $bool_verwijderd;
 
 
     /**
@@ -239,6 +242,22 @@ class Timeslots
     public function setId($id)
     {
         $this->id = $id;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getBoolVerwijderd()
+    {
+        return $this->bool_verwijderd;
+    }
+
+    /**
+     * @param mixed $bool_verwijderd
+     */
+    public function setBoolVerwijderd($bool_verwijderd)
+    {
+        $this->bool_verwijderd = $bool_verwijderd;
     }
 
 
