@@ -233,6 +233,14 @@ class Timeslots
         $this->reservationurl = $reservationurl;
     }
 
+    /**
+     * @param int $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
 
 }
 
