@@ -33,7 +33,7 @@ class Timeslots
      */
     private $starttime;
     /**
-     * @ORM\Column(name="$endtime",type="string", length=64)
+     * @ORM\Column(name="end_time",type="string", length=64)
      */
     private $endtime;
     /**
@@ -45,11 +45,11 @@ class Timeslots
      */
     private $cost;
     /**
-     * @ORM\Column(name="integer",type="string", length=11)
+     * @ORM\Column(name="orginal_cost",type="integer", length=11)
      */
     private $originalcost;
     /**
-     * @ORM\Column(name="insert_date",type="string", length=64)
+     * @ORM\Column(name="insert_date",type="string", length=256)
      */
     private $insertdate;
     /**
@@ -57,7 +57,7 @@ class Timeslots
      */
     private $deleted;
     /**
-     * @ORM\Column(name="reservation_url",type="string", length=64)
+     * @ORM\Column(name="reservation_url",type="text")
      */
     private $reservationurl;
 
