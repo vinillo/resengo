@@ -155,7 +155,7 @@ class DefaultController extends Controller
         if ($result[0]['starttime'] < time()):
             return true; //it changed
         else:
-            return true;
+            return false; //woopz
         endif;
 
     }
